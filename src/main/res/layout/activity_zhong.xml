@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/sousuobuju"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#00ace6"
+        >
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="搜索公司/职位"
+            android:drawableLeft="@drawable/sousuo"
+            android:background="@drawable/et"
+            android:drawablePadding="10dp"
+            android:maxLines="1"
+            android:paddingLeft="5dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/guangao"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/sousuobuju"
+        android:text="广告位"
+        android:textColor="#000"
+
+        />
+    <FrameLayout
+        android:layout_below="@id/guangao"
+        android:id="@+id/fragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </FrameLayout>
+
+</RelativeLayout>
